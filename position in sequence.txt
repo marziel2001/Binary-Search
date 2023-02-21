@@ -1,0 +1,39 @@
+Funkcja szuka podanego elementu w monotonicznie rosnącym LUB malejącym ciągu liczb całkowitych (ze znakiem). Funkcja powinna zwrócić indeks, pod którym leży poszukiwany element w ciągu, lub -1, jeśli element nie został odnaleziony.
+(Indeksy są liczone zaczynając od 0)
+
+Input
+Pierwsza linia: m - liczba scenariuszy testowych.
+Następnie, dla każdego scenariusza, w kolejnych liniach:
+n - liczba elementów w ciągu
+sam ciąg (n liczb rozdzielonych znakami spacji)
+p - liczba elementów do wyszukania
+k0, ..., kp-1 - p elementów do wyszukania w ciągu.
+
+Output
+One line for each of p elements to be found for each of n test scenarios:
+the index of the given element ki in the sequence, or -1 if ki was not found in the sequence.
+Jedna linia dla każdego z p elementów do wyszukania dla każdego z n scenariuszy testowych:
+indeks podanego elementu ki w ciągu, lub -1 jeśli element ki nie został odnaleziony.
+
+Example/Przykład
+Input
+3
+5
+5 4 3 2 1
+1
+5
+10
+1 2 4 8 16 32 64 128 256 512
+2
+128
+129
+5
+-100 -50 -1 0 10000
+1
+-1
+
+Output
+0
+7
+-1
+2
